@@ -20,6 +20,8 @@ public class Main {
         System.out.println(areaRectangle(20,15));
 
         System.out.println(printInitials("John Davidson"));
+
+        System.out.println(findAngleTriangle(20,50));
     }
 
     static int areaRectangle(int length, int width){
@@ -36,5 +38,9 @@ public class Main {
 
         return initials.toUpperCase();
 
+    }
+
+    static int findAngleTriangle(int a, int b){
+        return 180 - a - b;
     }
 }
