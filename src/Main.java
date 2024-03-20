@@ -15,5 +15,18 @@ public class Main {
         for(int i=0; i<myNum.length; i++){
             System.out.println(myNum[i]+15);
         }
+
+        System.out.println(printInitials("John Davidson"));
+    }
+
+    static String printInitials(String name){
+        String initials = "";
+        String[] substrings = name.split(" ");
+
+        for (String letter : substrings) {
+            initials += letter.charAt(0);
+        }
+
+        return initials.toUpperCase();
     }
 }
