@@ -16,10 +16,25 @@ public class Main {
             System.out.println(myNum[i] + 15);
         }
 
+
         System.out.println(areaRectangle(20,15));
+
+        System.out.println(printInitials("John Davidson"));
     }
 
     static int areaRectangle(int length, int width){
         return length * width;
+    }
+
+    static String printInitials(String name){
+        String initials = "";
+        String[] substrings = name.split(" ");
+
+        for (String letter : substrings) {
+            initials += letter.charAt(0);
+        }
+
+        return initials.toUpperCase();
+
     }
 }
