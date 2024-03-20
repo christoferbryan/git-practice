@@ -11,5 +11,9 @@ public class Main {
         for(int num : myNum){
             System.out.println(num);
         }
+
+        for(int i=0; i<myNum.length; i++){
+            System.out.println(myNum[i]+15);
+        }
     }
 }
