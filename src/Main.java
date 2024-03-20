@@ -17,6 +17,8 @@ public class Main {
         }
 
         System.out.println(printInitials("John Davidson"));
+
+        System.out.println(findAngleTriangle(20,50));
     }
 
     static String printInitials(String name){
@@ -28,5 +30,9 @@ public class Main {
         }
 
         return initials.toUpperCase();
+    }
+
+    static int findAngleTriangle(int a, int b){
+        return 180 - a - b;
     }
 }
