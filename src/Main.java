@@ -28,12 +28,12 @@ public class Main {
         return length * width;
     }
 
-    static String printInitials(String name){
+    static String printInitials(String fullname){
         String initials = "";
-        String[] substrings = name.split(" ");
+        String[] names = fullname.split(" ");
 
-        for (String letter : substrings) {
-            initials += letter.charAt(0);
+        for (String name : names) {
+            initials += name.charAt(0);
         }
 
         return initials.toUpperCase();
